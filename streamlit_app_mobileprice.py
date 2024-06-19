@@ -1,10 +1,12 @@
 import pickle
 import streamlit as st
-from xgboost import XGBRegressor
+#from xgboost import XGBRegressor
+from sklearn import svm
+from sklearn.linear_model import LogisticRegression
 
 # loading the trained model
-pkl_file = open('XGBoost.pkl', 'rb')
-regressor = pickle.load(pkl_file)
+csv_file = open('data_mobile_price_range.csv', 'rb')
+regressor = csv.load(csv_file)
 
 @st.cache_data()
 # defining the function which will make the prediction using the data which the user inputs
