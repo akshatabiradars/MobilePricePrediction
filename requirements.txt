@@ -2,6 +2,6 @@ pandas
 numpy
 matplotlib
 seaborn
-pickle5
+pickle
 scikit-learn
-xgboost
+#xgboost
